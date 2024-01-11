@@ -7,8 +7,9 @@ def cargar_datos():
         with open("blockbuster_data.json", "r") as file:
             data = json.load(file)
     except FileNotFoundError:
-        data = {"blockbuster": {"peliculas": {}}}
+        data = {"blockbuster": {"peliculas": {}, "generos": {}}}
     return data
+
 
 def administrador_generos(data):
     while True:
