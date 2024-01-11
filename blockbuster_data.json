@@ -1,0 +1,11 @@
+{
+    "blockbuster": {
+        "peliculas": {},
+        "generos": {
+            "12": {
+                "id": "12",
+                "nombre": "yo"
+            }
+        }
+    }
+}

@@ -1,5 +1,3 @@
-# funciones.py
-
 def agregar_pelicula(data):
     codigo = input("Ingrese el código de la película: ")
     nombre = input("Ingrese el nombre de la película: ")
@@ -75,8 +73,7 @@ def eliminar_actor(data):
 def buscar_pelicula(data):
     codigo = input("Ingrese el código de la película que desea buscar: ")
 
-    if codigo in data["blockbuster"]["peliculas"]:
-        # Código para buscar una película
+    if codigo in data["blockbuster"]["peliculas"]:        
         pass
     else:
         print("Película no encontrada.")
@@ -100,7 +97,6 @@ def listar_peliculas_por_genero(data):
 def listar_peliculas_por_protagonista(data):
     actor_nombre = input("Ingrese el nombre del protagonista: ")
 
-    # Buscar películas por protagonista
     peliculas_protagonista = []
     for pelicula_id, pelicula_info in data["blockbuster"]["peliculas"].items():
         for actor_id, actor_info in pelicula_info["actores"].items():
