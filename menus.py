@@ -1,5 +1,3 @@
-# menus.py
-
 def menu_principal():
     print("\nSISTEMA GESTOR DE PELICULAS BLOCKBUSTER")
     print("1 Administrador de Generos")
